@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/question"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Question:1"
+                android:textSize="32dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_score_linking"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="score:0"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_time_linking"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="time:10"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_vi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/background_all"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="xin chao cac ban"
+            android:textSize="20dp" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/background_all"
+            android:textSize="24dp" />
+
+        <GridView
+            android:textColor="@android:color/black"
+            android:id="@+id/grv_eg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/background_all"
+            android:numColumns="3" />
+
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/lnl_game_over"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_gameover">
+    </include>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/activity_play_game"/>
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

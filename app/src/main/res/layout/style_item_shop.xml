@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_item_rcv"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imv_item_book"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:scaleType="center" />
+
+        <TextView
+            android:textSize="12dp"
+            android:id="@+id/tv_name_item_book"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="english book" />
+
+        <TextView
+            android:id="@+id/tv_item_book_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="230.000d"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

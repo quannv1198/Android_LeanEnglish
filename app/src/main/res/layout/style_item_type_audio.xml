@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/background_item_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:padding="10dp"
+            android:background="@drawable/custom_bg_2"
+            android:id="@+id/imv_item_type_audio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/alphabet_a" />
+    </LinearLayout>
+</LinearLayout>

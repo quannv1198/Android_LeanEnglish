@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quan.english">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="barcode" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider609273752611272"
+            android:exported="true" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.video.VideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.video.VideoPlay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.audio.AudioListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.audio.AudioPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.menu.qr.CodeQRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.menu.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.menu.chat.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.menu.shop.ShopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.menu.shop.BookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.menu.shop.ReadBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.menu.user.UserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.home.notify.NotifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".linking.LinkingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            />
+    </application>
+</manifest>
